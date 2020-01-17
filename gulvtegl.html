@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+
+<html lang="da">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="gulvtegl.css">
+        
+        <title>Indkomstberegner</title>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="gulvtegl emblem rå-kopi.png" width="30" height="30" class="img-responsive d-inline-block align-top" style="margin: 0 10px auto 0;"/>Gulvtegl.dk</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#maal-og-priser-modal" role="button">Mål og priser</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#produktion-modal" role="button">Produktion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#historie-modal" role="button">Historie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#laeggevejledning-modal" role="button">Læggevejledning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt-tile"><!--HUSK OGSÅ AT SLÅ HOVER TIL-->Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-3 mb-3">
+                <!--Billede tiles-->
+                <div class="col text-center">
+                    <img src="031 kv.jpg" class="img-fluid rounded mb-3 kvadrat-tile-image" alt="...">
+                </div>
+                <div class="col text-center">
+                    <img src="IMG_4921 kv.jpg" class="img-fluid rounded mb-3 kvadrat-tile-image" alt="...">
+                </div>
+                <div class="col text-center">
+                    <img src="2016.05.VicenteCamp.036 kv.jpg" class="img-fluid rounded mb-3 kvadrat-tile-image" alt="...">
+                </div>
+            </div>
+            <div class="row mt-md-3">
+                <div class="col-lg ml-lg-3 mt-md-3">
+                    <!--"Mål og priser" tile-->
+                    <div class="row tile-container-row">
+                        <a class="card-container-link" data-toggle="modal" data-target="#maal-og-priser-modal" role="button">
+                            <div class="card plus-45-deg" id="maal-og-priser-tile">
+                                <h5 class="card-header">Mål og priser</h5>
+                                <div class="card-body">
+                                    <div class="card-text d-block text-truncate text-wrap" id="maal-og-priser-tekst">
+                                        <p class="highlight mt-0">
+                                        Gul eller rød</p>24 x 11 x 2 cm
+                                            <p class="highlight">Pris pr. m<sup>2</sup></p>
+                                        435,00 inkl. moms<br />
+                                            <p class="highlight">Gul eller rød</p>
+                                        20 x 20 x 2 cm
+                                            <p class="highlight">Pris pr. m<sup>2</sup></p>
+                                        450,00 inkl. moms
+                                            <p class="highlight-2">For mere information og for levering, skriv til gulvtegl@gulvtegl.dk.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--"Produktion" tile-->
+                    <div class="row tile-container-row">
+                        <a class="card-container-link" data-toggle="modal" data-target="#produktion-modal" role="button">
+                            <div class="card plus-45-deg">
+                                <h5 class="card-header">Produktion</h5>
+                                <div class="card-body mb-3 text-truncate">
+                                    <p class="card-text d-block text-wrap mb-3">Vand og ler fra områderne i Sydspanien kombineret med hårdt, manuelt arbejde er de eneste ingredienser, der udgør den klassiske og helt igennem økologiske fremstilling af teglsten.</p>
+                                    <p class="card-text d-block text-wrap mb-3">Leret blandes med vand, og med de bare næver bliver det lagt i en træform, hvor det presses ned og skrabes glat. Så løftes flisen ud af rammen og stilles til tørre på træpaller i 72 timer. Herefter stables de på små vogne og køres til ovnen, hvor de stilles minutiøst på højkant ved siden af hinanden, så varmen kan komme godt omkring hele overfladen og brænde stenen til den rette farve.</p>
+                                    <p class="card-text d-block text-wrap mb-3">Den næsten 100 år gamle ovn er en 45 meter lang og 2 meter høj hvælving af murværk, hvor temperaturen udelukkende reguleres af mængden af gennemstrømmende luft. Ovnen opvarmes med træ til ca. 1.000°C, og traditionen tro måler man ikke temperaturen med termometer – man kigger på flammen og ser, hvornår den giver det korrekte gradtal.<br />Når teglstenen efter 24 timer er brændt færdig og kølet af, sættes den på paller og er klar til levering. Alle dele af produktionen foregår med håndkraft. Selv når fliserne sættes på paller, sker det sirligt og manuelt én efter én. Og det er netop denne metode, der gør gulvflisen så speciel. Den resulterer i et levende, organisk gulv, som adskiller sig markant fra det maskinfremstillede, ensartede og snorlige alternativ. Ingen fliser er ens, de kan variere en smule, både i længde, bredde og tykkelse, og også farverne inden for den røde, den gule og den mixede rød-gule kan have variationer. Men når fliserne lægges til et helt gulv, bliver det samlede udtryk meget ekstraordinært.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--"Historie" tile-->
+                    <div class="row tile-container-row">
+                        <a class="card-container-link" data-toggle="modal" data-target="#historie-modal" role="button">
+                            <div class="card plus-45-deg">
+                                <h5 class="card-header">Historie</h5>
+                                <div class="card-body mb-3 text-truncate">
+                                    <p class="card-text d-block text-wrap">Vores teglsten bliver produceret på en fabrik i Spanien, som snart kan fejre sit 100 års jubilæum. Fabrikken arbejder stadig efter gamle traditioner, og den sætter en ære i at fremstille håndlavede mursten og gulvtegl efter en fremgangsmåde, som er baseret på den gamle håndværkstradition. Virksomheden har været i familiens eje siden etableringen i 1920, og i dag er det tredje generation, der driver produktionen.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg mr-lg-3 mt-md-3">
+                    <!--"Læggevejledning" tile-->
+                    <div class="row tile-container-row">
+                        <a class="card-container-link" data-toggle="modal" data-target="#laeggevejledning-modal" role="button">
+                            <div class="card plus-45-deg">
+                                <h5 class="card-header" id="laeggevejledning-tile-titel">Læggevejledning</h5>
+                                <div class="card-body mb-3 text-truncate">
+                                    <p class="card-text d-block text-wrap mb-3">Underlaget rengøres for støv og snavs og primes med LIP gulvprimer.</p>
+                                    <p class="card-text d-block text-wrap mb-3">Gulvteglene suger meget vand og fugt til sig, når de kommer i berøring med fliseklæb, og det kan resultere i for hurtig udtørring. Derfor er det en god idé at gøre teglene fugtige og lade dem suge en del vand, inden de kommer i berøring med fliseklæben. Ellers kan man ikke nå at trykke flisen på plads, før fliseklæben binder gulvteglen helt fast til underlaget.</p>
+                                    <p class="card-text d-block text-wrap mb-3">Gulvteglene varierer en smule i tykkelse. Dette kan der kompenseres for ved brug af en tilpas tyk tandspartel til fordeling af rigelig fliseklæb. Selv om teglstenen er forholdsvis gennemfugtet, inden den placeres i fliseklæben, skal den alligevel relativt hurtigt skubbes præcist på plads og rettes i niveau. Brug murersnor til at holde de overordnede linjer og vinkler.</p>
+                                    <p class="card-text d-block text-wrap mb-3">Når hele gulvet er lagt, lader man det tørre et par døgn. Herefter kan fugearbejdet begynde, og som det første skal overfladen af gulvteglen forsegles, så den ikke tager alt for meget i mod kalk og fugerester og kan gøres ren igen efter endt fugning. Stenene kan smøres grundigt i en opløsning af sæbespåner, eller ønsker man en lidt mere blank overflade, kan der påføres FILA voks klinkeforsegling. Trods disse forseglinger af overfladen tåler gulvteglen stadig ikke at fugemassen slemmes og fejes i. Det er nødvendigt at arbejde med jord-tør fuge, så fugen kan styres og sådan, at tilsmudsning af teglets overflade bliver så lille som muligt.</p>
+                                    <p class="card-text d-block text-wrap mb-3">Når fugen efter et par døgn er helt tør, kan der igen vaskes med en opløsning af sæbespåner, og gulvet vil være klar til brug.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--"Kontakt" tile-->
+                    <div class="row tile-container-row">
+                        <div class="card plus-45-deg" id="kontakt-tile">
+                            <h5 class="card-header">Kontakt</h5>
+                            <div class="card-body">
+                                <p class="card-text">Hvis du har nogen spørgsmål eller ønsker at bestille en vareprøve, så skriv venligst til:</p>
+                                <a href="mailto:gulvtegl@gulvtegl.dk"><p class="card-text text-center" id="kontaktinfo">gulvtegl@gulvtegl.dk</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--"Mål og priser" modal-->
+        <div class="modal fade" id="maal-og-priser-modal" tabindex="0" role="dialog" aria-labelledby="maal-og-priser-modal-titel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="maal-og-priser-modal-titel">Mål og priser</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="container">
+                                        <p class="highlight" style="margin-top:0">Gul eller rød</p>24 x 11 x 2 cm
+                                        <p class="highlight">Pris pr. m<sup>2</sup></p>
+                                        435,00 inkl. moms<br />
+                                        <p class="highlight">Gul eller rød</p>
+                                        20 x 20 x 2 cm
+                                        <p class="highlight">Pris pr. m<sup>2</sup></p>
+                                        450,00 inkl. moms
+                                        <p class="highlight-2 mb-3">For mere information og levering, skriv til os på <a href="mailto:gulvtegl@gulvtegl.dk">gulvtegl@gulvtegl.dk</a>.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="container mb-3 text-center">
+                                        <img src="001.jpg" class="img-fluid mb-3" alt="...">
+                                        <img src="IMG_4992.jpg" class="img-fluid mb-3" alt="...">
+                                        <img src="031.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--"Produktion" modal-->
+        <div class="modal fade" id="produktion-modal" tabindex="0" role="dialog" aria-labelledby="produktion-modal-titel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="produktion-modal-titel">Produktion</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="container">
+                                        <p class="mb-3">Vand og ler fra områderne i Sydspanien kombineret med hårdt, manuelt arbejde er de eneste ingredienser, der udgør den klassiske og helt igennem økologiske fremstilling af teglsten.</p>
+                                        <p class="mb-3">Leret blandes med vand, og med de bare næver bliver det lagt i en træform, hvor det presses ned og skrabes glat. Så løftes flisen ud af rammen og stilles til tørre på træpaller i 72 timer. Herefter stables de på små vogne og køres til ovnen, hvor de stilles minutiøst på højkant ved siden af hinanden, så varmen kan komme godt omkring hele overfladen og brænde stenen til den rette farve.</p>
+                                        <p class="mb-3">Den næsten 100 år gamle ovn er en 45 meter lang og 2 meter høj hvælving af murværk, hvor temperaturen udelukkende reguleres af mængden af gennemstrømmende luft. Ovnen opvarmes med træ til ca. 1.000°C, og traditionen tro måler man ikke temperaturen med termometer – man kigger på flammen og ser, hvornår den giver det korrekte gradtal.<br />Når teglstenen efter 24 timer er brændt færdig og kølet af, sættes den på paller og er klar til levering. Alle dele af produktionen foregår med håndkraft. Selv når fliserne sættes på paller, sker det sirligt og manuelt én efter én. Og det er netop denne metode, der gør gulvflisen så speciel. Den resulterer i et levende, organisk gulv, som adskiller sig markant fra det maskinfremstillede, ensartede og snorlige alternativ. Ingen fliser er ens, de kan variere en smule, både i længde, bredde og tykkelse, og også farverne inden for den røde, den gule og den mixede rød-gule kan have variationer. Men når fliserne lægges til et helt gulv, bliver det samlede udtryk meget ekstraordinært.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="row">
+                                        <div class="col-lg">
+                                            <div class="container mb-3 text-center">
+                                                <img src="2016.05.VicenteCamp.017.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="2016.05.VicenteCamp.036.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="2016.05.VicenteCamp.048.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4905.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_5022.jpg" class="img-fluid mb-3" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg">
+                                            <div class="container mb-3 text-center">
+                                                <img src="2016.05.VicenteCamp.025.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="2016.05.VicenteCamp.030.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="2016.05.VicenteCamp.032.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4922.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4902.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4900.jpg" class="img-fluid mb-3" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--"Historie" modal-->
+        <div class="modal fade" id="historie-modal" tabindex="0" role="dialog" aria-labelledby="historie-modal-titel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="historie-modal-titel">Historie</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="container">
+                                        <p>Vores teglsten bliver produceret på en fabrik i Spanien, som snart kan fejre sit 100 års jubilæum. Fabrikken arbejder stadig efter gamle traditioner, og den sætter en ære i at fremstille håndlavede mursten og gulvtegl efter en fremgangsmåde, som er baseret på den gamle håndværkstradition. Virksomheden har været i familiens eje siden etableringen i 1920, og i dag er det tredje generation, der driver produktionen.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="container mb-3 text-center">
+                                        <img src="IMG_4991.jpg" class="img-fluid mb-3" alt="...">
+                                        <img src="IMG_5004.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--"Læggevejledning" modal-->
+        <div class="modal fade" id="laeggevejledning-modal" tabindex="0" role="dialog" aria-labelledby="laeggevejledning-modal-titel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="laeggevejledning-modal-titel">Læggevejledning</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="container">
+                                        <p class="mb-3">Underlaget rengøres for støv og snavs og primes med LIP gulvprimer.</p>
+                                        <p class="mb-3">Gulvteglene suger meget vand og fugt til sig, når de kommer i berøring med fliseklæb, og det kan resultere i for hurtig udtørring. Derfor er det en god idé at gøre teglene fugtige og lade dem suge en del vand, inden de kommer i berøring med fliseklæben. Ellers kan man ikke nå at trykke flisen på plads, før fliseklæben binder gulvteglen helt fast til underlaget.</p>
+                                        <p class="mb-3">Gulvteglene varierer en smule i tykkelse. Dette kan der kompenseres for ved brug af en tilpas tyk tandspartel til fordeling af rigelig fliseklæb. Selv om teglstenen er forholdsvis gennemfugtet, inden den placeres i fliseklæben, skal den alligevel relativt hurtigt skubbes præcist på plads og rettes i niveau. Brug murersnor til at holde de overordnede linjer og vinkler.</p>
+                                        <p class="mb-3">Når hele gulvet er lagt, lader man det tørre et par døgn. Herefter kan fugearbejdet begynde, og som det første skal overfladen af gulvteglen forsegles, så den ikke tager alt for meget i mod kalk og fugerester og kan gøres ren igen efter endt fugning. Stenene kan smøres grundigt i en opløsning af sæbespåner, eller ønsker man en lidt mere blank overflade, kan der påføres FILA voks klinkeforsegling. Trods disse forseglinger af overfladen tåler gulvteglen stadig ikke at fugemassen slemmes og fejes i. Det er nødvendigt at arbejde med jord-tør fuge, så fugen kan styres og sådan, at tilsmudsning af teglets overflade bliver så lille som muligt.</p>
+                                        <p class="mb-3">Når fugen efter et par døgn er helt tør, kan der igen vaskes med en opløsning af sæbespåner, og gulvet vil være klar til brug.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="row">
+                                        <div class="col-lg">
+                                            <div class="container mb-3 text-center">
+                                                <img src="IMG_4970.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4968.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4966.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4964.jpg" class="img-fluid mb-3" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg">
+                                            <div class="container mb-3 text-center">
+                                                <img src="IMG_4958.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4957.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4952.jpg" class="img-fluid mb-3" alt="...">
+                                                <img src="IMG_4939.jpg" class="img-fluid mb-3" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--JS links-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+    
+</html>
